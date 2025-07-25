@@ -1,0 +1,184 @@
+@use "./_global";
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat.ttf');
+  font-weight: 400;
+}
+
+%fontMontserrat {
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+}
+
+@layer components {
+  .h {
+    &1 {
+      @extend %fontMontserrat;
+      font-size: global.rem(40);
+      line-height: 100%;
+      letter-spacing: 4%;
+      text-transform: uppercase;
+      font-weight: 400;
+      
+
+      @include global.media-min('d') {
+        font-size: global.rem(40);
+      }
+    }
+
+    &2 {
+      @extend %fontMontserrat;
+      font-size: global.rem(34);
+      line-height: 100%;
+      font-weight: 500;
+      letter-spacing: 4%;
+
+      @include global.media-min('t') {
+        font-size: global.rem(34);
+      }
+
+      @include global.media-min('d') {
+        font-size: global.rem(34);
+      }
+    }
+
+    &3 {
+      @extend %fontMontserrat;
+      font-size: global.rem(40);
+      line-height: 100%;
+      font-weight: 500;
+      letter-spacing: 4%;
+
+      @include global.media-min('t') {
+        font-size: global.rem(40);
+      }
+
+      @include global.media-min('d') {
+        font-size: global.rem(40);
+      }
+    }
+
+    &4 {
+      @extend %fontMontserrat;
+      font-size: global.rem(20);
+      line-height: 100%;
+      text-transform: uppercase;
+      font-weight: 400;
+
+      @include global.media-min('t') {
+        font-size: global.rem(20);
+      }
+
+      @include global.media-min('d') {
+        font-size: global.rem(20);
+      }
+    }
+
+    &5 {
+      @extend %fontMontserrat;
+      font-size: global.rem(30);
+      line-height: 130%;
+      font-weight: 800;
+
+      @include global.media-min('t') {
+        font-size: global.rem(30);
+      }
+
+      @include global.media-min('d') {
+        font-size: global.rem(30);
+      }
+    }
+
+    &6 {
+      @extend %fontMontserrat;
+      font-size: global.rem(25);
+      line-height: 100%;
+      text-transform: uppercase;
+      font-weight: 800;
+
+      @include global.media-min('t') {
+        font-size: global.rem(25);
+      }
+
+      @include global.media-min('d') {
+        font-size: global.rem(25);
+      }
+    }
+  }
+
+  .t {
+    &1 {
+      @extend %fontMontserrat;
+      font-size: global.rem(30);
+      line-height: 130%;
+      font-weight: 500;
+
+      @include global.media-min('t') {
+        font-size: global.rem(30);
+      }
+
+      @include global.media-min('d') {
+        font-size: global.rem(30);
+      }
+    }
+
+    &2 {
+      @extend %fontMontserrat;
+      font-size: global.rem(26);
+      line-height: 100%;
+      letter-spacing: 4%;
+
+      @include global.media-min('t') {
+        font-size: global.rem(26);
+      }
+    }
+
+    &3 {
+      @extend %fontMontserrat;
+      font-size: global.rem(24);
+      line-height: 100%;
+      font-weight: 500;
+    }
+
+    &4 {
+      @extend %fontMontserrat;
+      font-size: global.rem(22);
+      line-height: 100%;
+      font-weight: 500;
+
+      @include global.media-min('d') {
+        font-size: global.rem(22);
+      }
+    }
+
+    &5 {
+      @extend %fontMontserrat;
+      font-size: global.rem(20);
+      line-height: 130%;
+      font-weight: 800;
+
+      @include global.media-min('t') {
+        font-size: global.rem(20);
+      }
+    }
+
+    &6 {
+      @extend %fontMontserrat;
+      font-size: global.rem(20);
+      line-height: 130%;
+      font-weight: 500;
+
+      @include global.media-min('t') {
+        font-size: global.rem(20);
+      }
+    }
+
+    &7 {
+      @extend %fontMontserrat;
+      font-size: global.rem(18);
+      line-height: 130%;
+      font-weight: 500;
+    }
+  }
+}

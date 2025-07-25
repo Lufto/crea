@@ -1,0 +1,25 @@
+@use "tailwindcss";
+@use "./_global";
+
+@theme {
+  --breakpoint-m: 375px;
+  --breakpoint-t: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-d: 1280px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-xxl: 1600px;
+
+  --color-black-100: #000000;
+  --color-black-200: #1E1E1E;
+
+  --color-white-100: #FFFFFF;
+  --color-white-200: #ffffff50;
+
+  --color-orange-100: #FD4B01;
+  --color-orange-200: #FE6600;
+  --color-orange-300: #FF7701;
+
+
+  --color-gradient-orange-1: #F47B01;
+  --color-gradient-orange-2: #FE0003;
+}

@@ -1,0 +1,28 @@
+@use "./_global";
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  line-height: 130%;
+  font-size: calc(var(--spacing) * 8);
+  font-family: "Nunito", serif;
+  font-weight: 400;
+  min-height: 100vh;
+  background: var(--color-grey-100);
+}
+
+button,
+form,
+input,
+textarea {
+  font-family: "Nunito", serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+}
