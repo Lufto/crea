@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   width: 100%;
   margin: 0;
+  padding: 0;
   line-height: 130%;
   font-size: calc(var(--spacing) * 8);
   font-family: "Nunito", serif;
@@ -25,4 +26,11 @@ textarea {
   max-width: 1600px;
   margin: 0 auto;
   height: 100%;
+  padding: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 80px 40px;  
+  }
 }

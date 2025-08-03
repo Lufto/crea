@@ -7,7 +7,7 @@
 }
 
 %fontMontserrat {
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat';
   font-weight: 400;
 }
 
@@ -15,11 +15,15 @@
   .h {
     &1 {
       @extend %fontMontserrat;
-      font-size: global.rem(40);
+      font-size: global.rem(20);
       line-height: 100%;
       letter-spacing: 4%;
       text-transform: uppercase;
       font-weight: 400;
+
+      @include global.media-min('t') {
+        font-size: global.rem(30);
+      }
       
 
       @include global.media-min('d') {
@@ -29,13 +33,13 @@
 
     &2 {
       @extend %fontMontserrat;
-      font-size: global.rem(34);
+      font-size: global.rem(16);
       line-height: 100%;
       font-weight: 500;
       letter-spacing: 4%;
 
       @include global.media-min('t') {
-        font-size: global.rem(34);
+        font-size: global.rem(24);
       }
 
       @include global.media-min('d') {
@@ -45,13 +49,13 @@
 
     &3 {
       @extend %fontMontserrat;
-      font-size: global.rem(40);
+      font-size: global.rem(25);
       line-height: 100%;
       font-weight: 500;
       letter-spacing: 4%;
 
       @include global.media-min('t') {
-        font-size: global.rem(40);
+        font-size: global.rem(30);
       }
 
       @include global.media-min('d') {
@@ -61,13 +65,13 @@
 
     &4 {
       @extend %fontMontserrat;
-      font-size: global.rem(20);
+      font-size: global.rem(10);
       line-height: 100%;
       text-transform: uppercase;
       font-weight: 400;
 
       @include global.media-min('t') {
-        font-size: global.rem(20);
+        font-size: global.rem(14);
       }
 
       @include global.media-min('d') {
@@ -77,12 +81,12 @@
 
     &5 {
       @extend %fontMontserrat;
-      font-size: global.rem(30);
+      font-size: global.rem(22);
       line-height: 130%;
       font-weight: 800;
 
       @include global.media-min('t') {
-        font-size: global.rem(30);
+        font-size: global.rem(25);
       }
 
       @include global.media-min('d') {
@@ -110,12 +114,12 @@
   .t {
     &1 {
       @extend %fontMontserrat;
-      font-size: global.rem(30);
+      font-size: global.rem(20);
       line-height: 130%;
       font-weight: 500;
 
       @include global.media-min('t') {
-        font-size: global.rem(30);
+        font-size: global.rem(25);
       }
 
       @include global.media-min('d') {
@@ -125,20 +129,31 @@
 
     &2 {
       @extend %fontMontserrat;
-      font-size: global.rem(26);
+      font-size: global.rem(16);
       line-height: 100%;
       letter-spacing: 4%;
 
       @include global.media-min('t') {
+        font-size: global.rem(20);
+      }
+
+      @include global.media-min('d') {
         font-size: global.rem(26);
       }
     }
 
     &3 {
       @extend %fontMontserrat;
-      font-size: global.rem(24);
-      line-height: 100%;
+      font-size: global.rem(14);
+      line-height: 120%;
       font-weight: 500;
+      @include global.media-min('t') {
+        font-size: global.rem(18);
+      }
+
+      @include global.media-min('d') {
+        font-size: global.rem(24);
+      }
     }
 
     &4 {
@@ -165,7 +180,7 @@
 
     &6 {
       @extend %fontMontserrat;
-      font-size: global.rem(20);
+      font-size: global.rem(14);
       line-height: 130%;
       font-weight: 500;
 
@@ -176,7 +191,32 @@
 
     &7 {
       @extend %fontMontserrat;
-      font-size: global.rem(18);
+      font-size: global.rem(12);
+      line-height: 130%;
+      font-weight: 500;
+      @include global.media-min('t') {
+        font-size: global.rem(18);
+      }
+    }
+
+    &8 {
+      @extend %fontMontserrat;
+      font-size: global.rem(20);
+      line-height: 130%;
+      font-weight: 500;
+
+      @include global.media-min('t') {
+        font-size: global.rem(22);
+      }
+
+      @include global.media-min('d') {
+        font-size: global.rem(25);
+      }
+    }
+
+    &9 {
+      @extend %fontMontserrat;
+      font-size: global.rem(12);
       line-height: 130%;
       font-weight: 500;
     }

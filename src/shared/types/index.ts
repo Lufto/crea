@@ -1,7 +1,10 @@
-export type THeaderItem = {
+import type { IconsArray } from '../enums/icons';
+import type { LINK } from '../enums/link';
+
+export type TLinks = {
   title: string;
-  url: string;
-}[];
+  url?: LINK | string;
+};
 
 export interface ICallback {
   button: {
@@ -10,10 +13,11 @@ export interface ICallback {
   caseText: string;
   promoTitle: string;
   promoText: string;
+  modal: ModalCallback;
 }
 
 export type TStackItem = {
-  icon: string;
+  icon: IconsArray;
   title: string;
   text: string;
 };
@@ -58,21 +62,16 @@ export interface ICases {
   items: TCaseItem[];
 }
 
-export type TNavigationData = {
+export type TFooterDataItem = {
   title: string;
-  items: string[];
+  items?: TLinks[];
+  links?: TLinks[];
+  phone?: TLinks[];
+  emails?: TLinks[];
 };
 
-export interface IContactsData {
-  title: string;
-  phone: string[];
-  emails: string[];
-}
-
 export interface IFooterData {
-  navigation: TNavigationData;
-  SERVICES: TNavigationData;
-  Contacts: IContactsData;
+  [key: string]: TFooterDataItem;
 }
 
 export type TFooterOffers = {
@@ -85,8 +84,26 @@ export interface IFooter {
   offers: TFooterOffers;
 }
 
+export interface IOption {
+  label: string;
+  value: string;
+}
+
+export interface Field {
+  type: 'input' | 'select' | 'checkbox';
+  label: string;
+  placeholder?: string;
+  required?: boolean;
+  options?: IOption[];
+}
+
+interface ModalCallback {
+  title: string;
+  fields: Field[];
+}
+
 export interface IApiData {
-  header: THeaderItem[];
+  header: TLinks[];
   callback: ICallback;
   skills: ISkills;
   about: IAbout;

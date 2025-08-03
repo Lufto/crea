@@ -1,7 +1,8 @@
 export enum IconsArray {
   backend = 'backend',
   burger = 'burger',
-  checed = 'checed',
+  checked = 'checked',
+  close = 'close',
   crea = 'crea',
   design = 'design',
   frontend = 'frontend',
